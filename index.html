@@ -1,0 +1,41 @@
+<html ng-app="zoomApp">
+    <head>
+        <title>Panzoom Test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    
+    <body ng-controller="MainCtrl">
+      <div class="container">
+          <div class="row">
+              <div class="jumbotron center-block">
+                  <h1>Zooming in on stuff!</h1>
+                  <p>Click on each button to zoom in/out, and then drag within the image to pan around it. Pretty nifty!</p>
+              </div>
+          </div>
+          <div class="row">
+                 <div class="col-md-6 btns-1">
+                  <div class="btn btn-default" id="zoom-in-1" ng-click="zoomIn()">Zoom In</div>
+                  <div class="btn btn-default" id="zoom-out-1" ng-click="zoomIn()">Zoom Out</div></div>
+                  
+                  <div class="btns-2 col-md-6">
+                  <div class="btn btn-default" id="zoom-in-2" ng-click="zoomIn2()">Zoom In</div>
+                  <div class="btn btn-default" id="zoom-out-2" ng-click="zoomIn2()">Zoom Out</div>                  
+            </div>
+             <div class="row">
+              <div class="col-md-6" id="img1">                
+                  <img src="mountains.jpeg" class="zoom-1"/>
+              </div>
+              <div class="col-md-6" id="img2">
+                  <img src="cliffs.jpeg" class="zoom-2"/>
+              </div>
+          </div>
+      </div>
+      
+      
+       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.2/angular.min.js"></script>
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+       <script src="jquery.panzoom.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

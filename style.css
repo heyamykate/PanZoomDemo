@@ -1,0 +1,21 @@
+img {
+    height: 100%;
+    width: 100%;
+}
+.row {
+    padding-top: 10px;
+}
+.jumbotron {
+    text-align: center;
+}
+#img1,
+#img2 {
+    height: 400px;
+    padding-top: 10px;
+}
+.btns-1 {
+    padding-left: 14px;
+}
+.btns-2 > div.btn {
+    float: right;
+}
